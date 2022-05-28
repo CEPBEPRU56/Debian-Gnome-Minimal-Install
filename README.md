@@ -1,29 +1,30 @@
-# Debian-Gnome-Minimal-Install-CEPBEP_RU56
-## Минимальное руководство по установке Debian Gnome
+![debian_desktop.jpg](debian_desktop.jpg)
 
-У запуска Linux в качестве настольной операционной системы есть свои преимущества и недостатки. Если вы любите редактирование видео, создание музыки. Может быть, вам лучше работать с macOS? Если вы любите игры, создавайте офисные документы и регистрируйте все нажатия клавиш в Skynet. Может быть, вам лучше работать с Windows?
+## Debian Gnome Minimal Install Guide
 
-При установке macOS или Windows. У тебя нет особого выбора. Ты получаешь то, что получаешь. Вы никогда не можете использовать iTunes или Apple Maps. Не имеет значения, они являются частью пакета. Если вы попытаетесь удалить их, ваша система может стать нестабильной.
+There are advantages and disadvantages to running Linux as your desktop operating system. If you love video editing, music production. You may be better off with macOS? If you love gaming, churning out Office documents and logging all your keystrokes to Skynet. You may be better off with Windows?
 
-Именно здесь Linux (и FreeBSD) возвышаются над ведущими настольными операционными системами. Они дают вам выбор. (Иногда этот выбор может быть непростым. Так много дистрибутивов, сред рабочего стола, оконных менеджеров, тем, цветовых схем, параметров конфигурации.) Этот выбор гарантирует многообещающее будущее для настольных компьютеров Linux, потому что всегда будет значительная часть населения, которая хочет компьютер, который они могут программировать. Не устройство, которое пытается их запрограммировать.
+When you install macOS or Windows. You don't have much choice. You get what you get. You may never use iTunes or Apple Maps. Doesn't matter, they're part of the package. If you try to remove them, your system may become unstable.
 
-Минимальная установка Linux может сократить использование дискового пространства и оперативной памяти, повысить безопасность и конфиденциальность за счет уменьшения поверхности атаки. Повысьте производительность за счет сокращения времени, затрачиваемого на обновление и устранение неполадок. Торо сказал это лучше всех:
+This is where Linux (and FreeBSD) rise above the leading desktop operating systems. They give you choice. (Sometimes this choice can be daunting. So many distributions, desktop environments, window managers, themes, color schemes, configuration options.) This choice guarantees a promising future for the Linux Desktop, because there will always be a significant portion of the population that want a computer that they can program. Not an appliance that tries to program them.
 
-> * Наша жизнь разбазаривается по мелочам. Честному человеку вряд ли нужно считать больше, чем на своих десяти пальцах, или, в крайнем случае, он может добавить свои десять пальцев, а остальное сложить в кучу. Простота, простота, простота! Я говорю: пусть ваших дел будет два или три, а не сто или тысяча; вместо миллиона насчитайте полдюжины и ведите свои счета на ногтях большого пальца*.
+A minimal installation of Linux can reduce disk space and RAM usage, increase security and privacy by reducing attack surface. Increase performance by reducing time spent upgrading and troubleshooting. Thoreau said it best:
 
-Стандартный процесс установки Debian для Gnome desktop включает дополнительные пакеты, которые могут быть не нужны или не нужны многим пользователям. Это руководство позволит вам установить минимальный рабочий стол Gnome, добавив дополнительные пакеты по мере необходимости.
+> *Our life is frittered away by detail. An honest man has hardly need to count more than his ten fingers, or in extreme cases he may add his ten toes, and lump the rest. Simplicity, simplicity, simplicity! I say, let your affairs be as two or three, and not a hundred or a thousand; instead of a million count half a dozen, and keep your accounts on your thumb nail*.
 
-## Требования
+The standard Debian installation process for Gnome desktop includes additional packages that may not be necessary or wanted by many users. This guide will allow you to install a minimal Gnome desktop, adding additional packages as needed.
 
-* Установка debian (аппаратная или виртуальная машина) с соответствующими видеодрайверами.
+## Requirements
 
-* привилегии sudo для установки пакетов и запуска дополнительных скриптов.
+* A debian installation (hardware or virtual machine) with appropriate video drivers.
 
-* Установка `git` для клонирования этого репозитория `sudo pkg install git`
+* sudo privileges to install packages and run optional scripts.
 
-* Установка `bash` для запуска установочного скрипта `sudo pkg install bash'
+* Installation of `git` to clone this repo `sudo pkg install git`
 
-## ISO для установки Debian
+* Installation of `bash` to run install script `sudo pkg install bash`
+
+## ISO for Installing Debian
 
 * [debian-11.3.0-amd64-netinst.iso](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.3.0-amd64-netinst.iso)
 
@@ -31,15 +32,17 @@
 
 * [Debian “bullseye” Release Information](https://www.debian.org/releases/bullseye/)
 
-## Установка Debian без среды рабочего стола
+## Installing Debian without a desktop environment
 
-По мере прохождения процесса установки debian ближе к концу вам будет представлен следующий экран для выбора программного обеспечения:
+As you progress through the debian installation, towards the end you will be presented with the following screen for Software selection:
 
-Снимите флажок **Среда рабочего стола Debian**, чтобы установить минимальную систему debian.
+![debian-installer.jpg](debian-installer.jpg)
 
-## Обновление источников до тестовых или нестабильных (необязательно)
+Uncheck **Debian desktop environment** to install a minimal debian system.
 
-Обновите источники до `книжный червь.` Текущая ветвь тестирования.
+## Update sources to testing or unstable (optional)
+
+Update sources to `bookworm.` The current testing branch.
 
 `sudo $EDITOR /etc/apt/sources`:
 
@@ -57,24 +60,24 @@ deb-src http://deb.debian.org/debian bookworm-updates main
 # deb-src http://deb.debian.org/debian bookworm-backports main
 ```
 
-Добавляйте "contrib non-free" после каждой записи "main", если вам нужны специальные драйверы или дополнительная прошивка.
+Add `contrib non-free` after each `main` entry if you need special drivers or additional firmware.
 
-Другим вариантом был бы debian `unstable` (sid). Обновите "источники" следующим образом:
+The other option would be debian `unstable` (sid). Update `sources` as follows:
 
 ```bash
 deb http://deb.debian.org/debian/ unstable main
 deb-src http://deb.debian.org/debian/ unstable main
 ```
 
-Обновите свою систему:
+Upgrade your system:
 
 ```bash
 sudo apt update && apt upgrade
 ```
 
-Перезагрузитесь, чтобы загрузить обновленное ядро и службы.
+Reboot to load updated kernel and services.
 
-## Быстрая установка Минимального Gnome
+## Quick Install Minimal Gnome
 
 ```bash
 # clone the repo
@@ -85,9 +88,9 @@ cd Debian-Gnome-Minimal-Install
 ./install-debian gnome
 reboot
 ```
-Минимальный список пакетов gnome установит gdm (login manager), и после перезагрузки у вас должна быть полностью функциональная минимальная установка gnome.
+The minimal gnome package list will install gdm (login manager), and once you reboot you should have a fully functional minimal gnome installation.
 
-Простой скрипт примет аргумент командной строки (в данном случае 'gnome') и сопоставит его с функцией для установки выбранных пакетов, связанных с gnome. ((Он также проверяет, что вы используете Debian, прежде чем что-либо делать.) Вы можете добавлять или вычитать пакеты в соответствии с вашими потребностями. (требуется gnome-сессия.)
+The simple script will take the command line argument (in this case 'gnome') and match it to the function to install the selected gnome related packages. (It also verifies you are running Debian before doing anyhting.) You can add or subtract packages to suit your needs. (gnome-session is required.)
 
 ```bash
 #!/usr/bin/env bash
@@ -122,7 +125,7 @@ if [[ $(uname) == 'Linux' ]]; then
 fi
 ```
 
-Вы также можете добавлять функции. Возможно, у вас есть какие-то базовые пакеты, программы или приложения на python, которые вы хотите установить:
+You can also add functions. You may have some base packages, python programs or applications you want to install:
 
 ```bash
 base() {
@@ -155,4 +158,4 @@ apps() {
 }
 ```
 
-Запустите новую функцию для чистой установки `./install-debian base`
+call the new function `./install-debian base`

@@ -155,4 +155,4 @@ apps() {
 }
 ```
 
-call the new function `./install-debian base`
+Запустите новую функцию для чистой установки `./install-debian base`

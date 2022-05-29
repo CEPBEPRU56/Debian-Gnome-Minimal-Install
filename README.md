@@ -115,7 +115,14 @@ gnome() {
         network-manager-openvpn \
         network-manager-openvpn-gnome \
         wl-clipboard \
-        xsel
+        xsel \
+        pulseaudio \
+        gedit \
+        synaptic \
+        vlc \
+        gparted \
+        totem \
+        nvidia-driver
 }
 
 if [[ $(uname) == 'Linux' ]]; then

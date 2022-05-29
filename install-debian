@@ -31,7 +31,8 @@ gnome() {
         keepassxc \
         krita \
         krita-l10n \
-        gnome-weather
+        gnome-weather \
+        gufw
         
 }
 

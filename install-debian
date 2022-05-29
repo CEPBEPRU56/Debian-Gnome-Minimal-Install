@@ -25,7 +25,8 @@ gnome() {
         pulseaudio \
         gedit \
         synaptic \
-        gparted 
+        gparted \
+        gnome-clocks
         
 }
 

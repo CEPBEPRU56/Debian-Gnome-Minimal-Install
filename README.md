@@ -124,7 +124,8 @@ gnome() {
         gnome-software \
         keepassxc \
         krita \
-        krita-l10n
+        krita-l10n \
+        gnome-weather
 }
 
 if [[ $(uname) == 'Linux' ]]; then

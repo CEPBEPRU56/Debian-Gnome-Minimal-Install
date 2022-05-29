@@ -165,3 +165,6 @@ apps() {
 ```
 
 Запустите новую функцию `./install-debian base`
+
+
+Для установки драйверов:sudo apt-get install nvidia-driver

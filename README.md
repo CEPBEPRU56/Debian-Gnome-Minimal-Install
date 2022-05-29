@@ -119,7 +119,8 @@ gnome() {
         pulseaudio \
         gedit \
         synaptic \
-        gparted
+        gparted \
+        gnome-clocks
 }
 
 if [[ $(uname) == 'Linux' ]]; then

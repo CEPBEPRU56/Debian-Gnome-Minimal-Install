@@ -120,7 +120,8 @@ gnome() {
         gedit \
         synaptic \
         gparted \
-        gnome-clocks
+        gnome-clocks \
+        gnome-software
 }
 
 if [[ $(uname) == 'Linux' ]]; then

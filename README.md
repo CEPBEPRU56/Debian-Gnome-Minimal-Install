@@ -119,9 +119,7 @@ gnome() {
         pulseaudio \
         gedit \
         synaptic \
-        vlc \
         gparted \
-        totem \
         nvidia-driver
 }
 

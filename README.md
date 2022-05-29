@@ -121,7 +121,8 @@ gnome() {
         synaptic \
         gparted \
         gnome-clocks \
-        gnome-software
+        gnome-software \
+        keepassxc
 }
 
 if [[ $(uname) == 'Linux' ]]; then

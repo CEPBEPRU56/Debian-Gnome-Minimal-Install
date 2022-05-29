@@ -119,8 +119,7 @@ gnome() {
         pulseaudio \
         gedit \
         synaptic \
-        gparted \
-        nvidia-driver
+        gparted
 }
 
 if [[ $(uname) == 'Linux' ]]; then

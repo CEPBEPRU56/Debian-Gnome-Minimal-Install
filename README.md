@@ -130,7 +130,8 @@ gnome() {
         krita \
         krita-l10n \
         gnome-weather \
-        gufw
+        gufw \
+        firefox-esr
 }
 
 if [[ $(uname) == 'Linux' ]]; then

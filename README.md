@@ -122,7 +122,9 @@ gnome() {
         gparted \
         gnome-clocks \
         gnome-software \
-        keepassxc
+        keepassxc \
+        krita \
+        krita-l10n
 }
 
 if [[ $(uname) == 'Linux' ]]; then

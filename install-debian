@@ -27,7 +27,8 @@ gnome() {
         synaptic \
         gparted \
         gnome-clocks \
-        gnome-software
+        gnome-software \
+        keepassxc
         
 }
 

@@ -80,6 +80,10 @@ sudo apt update && apt upgrade
 ## Быстрая установка Минимального Gnome
 
 ```bash
+# Add root privileges
+apt-get install sudo
+# Add git repositories and collaborative project development
+sudo apt-get install git
 # clone the repo
 git clone https://github.com/coonrad/Debian-Gnome-Minimal-Install.git
 # cd to repo

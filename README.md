@@ -26,7 +26,7 @@
 
 ## ISO для установки Debian
 
-* [debian-11.3.0-amd64-netinst.iso](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.3.0-amd64-netinst.iso)
+* [debian-11.3.0-amd64-netinst.iso](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-11.5.0-amd64-DVD-1.iso)
 
 * [Installing Debian 11.3](https://www.debian.org/releases/bullseye/debian-installer/)
 

@@ -85,7 +85,7 @@ apt-get install sudo
 # Add git repositories and collaborative project development
 sudo apt-get install git
 # clone the repo
-git clone https://github.com/coonrad/Debian-Gnome-Minimal-Install.git
+git clone https://github.com/CEPBEPRU56/Debian-Gnome-Minimal-Install.git
 # cd to repo
 cd Debian-Gnome-Minimal-Install
 # run install script and call the gnome function
